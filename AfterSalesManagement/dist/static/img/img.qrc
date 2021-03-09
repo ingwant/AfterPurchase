@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="background">
+    <file>TrillionBackground.jpg</file>
+  </qresource>
+  <qresource prefix="Button">
+    <file>search-3-512.jpg</file>
+    <file>settings-24-512.jpg</file>
+    <file>box-5-512.ico</file>
+    <file>cart-43-512.ico</file>
+    <file>recycle-512.ico</file>
+  </qresource>
+  <qresource prefix="newPrefix"/>
+</RCC>
