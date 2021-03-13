@@ -1,0 +1,7 @@
+{
+    "host":"rm-0xi7ujv01y3ov18cpdo.mysql.rds.aliyuncs.com",
+    "port":3306,
+    "user":"trillion",
+    "password":"Trillion_",
+    "database":"trillion"
+}

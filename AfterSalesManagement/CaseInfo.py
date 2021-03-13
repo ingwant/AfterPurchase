@@ -57,11 +57,11 @@ class CaseInfo(QDialog):
         self.supply_company.setText(self.value_list[4])
         self.credit_num.setText(credit_num)
         self.amount.setText(str(amount))
-        self.status.setText(self.value_list[9])
-        self.responsible.setText(self.value_list[10])
+        self.status.setText(self.value_list[10])
+        self.responsible.setText(self.value_list[11])
         self.create_time.setText(self.value_list[2])
-        self.bad_count.setText(self.value_list[5])
-        self.bad_rate.setText(self.value_list[6])
+        self.bad_count.setText(self.value_list[6])
+        self.bad_rate.setText(self.value_list[7])
 
         # self.iphone_info_list = self.case_info.tableWidget
 

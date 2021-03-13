@@ -1,7 +1,7 @@
 {
-    "host":"IP",
+    "host":"",
     "port":3306,
-    "user":"",
+    "user":"root",
     "password":"",
-    "database":""
+    "database":"db_purchase"
 }

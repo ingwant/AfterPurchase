@@ -177,7 +177,6 @@ class ComFunction(object):
     def search_function(self, *args, **kwargs):
         print("zhixing cha")
 
-
     def open_file(self):
         openfile_name = QFileDialog.getOpenFileName(caption='select file', directory='',
                                                     filter='Excel files(*.xlsx , *.xls)', initialFilter='')
@@ -197,4 +196,20 @@ class ComFunction(object):
 
         return path_openfile_name, IEMI_list
 
+    def clear_plainTextEdit(self, plainTextEdit):
+        plainTextEdit.clear()
+
+    def set_IEMI_input_amount(self, plainTextEdit, lineEdit):
+        line_count = plainTextEdit.blockCount() -1
+        # line_count = plainTextEdit.document().lineCount() - 1
+        lineEdit.setText(str(line_count))
+
+        return line_count
+
+    def get_IEMI_list(self, plainTextEdit):
+        IEMI = plainTextEdit.toPlainText()
+        IEMI_list = IEMI.split()
+        print(IEMI_list)
+
+        return IEMI_list
 

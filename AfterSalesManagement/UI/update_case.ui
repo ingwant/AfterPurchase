@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1359</width>
+    <width>1556</width>
     <height>802</height>
    </rect>
   </property>
@@ -18,391 +18,6 @@
     <normaloff>../../AfterSale/static/img/available-updates-256.ico</normaloff>../../AfterSale/static/img/available-updates-256.ico</iconset>
   </property>
   <layout class="QGridLayout" name="gridLayout_6">
-   <item row="0" column="0">
-    <widget class="QGroupBox" name="groupBox">
-     <property name="maximumSize">
-      <size>
-       <width>16777215</width>
-       <height>183</height>
-      </size>
-     </property>
-     <property name="font">
-      <font>
-       <family>黑体</family>
-       <pointsize>10</pointsize>
-      </font>
-     </property>
-     <property name="title">
-      <string>基本信息栏</string>
-     </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QFrame" name="frame">
-        <property name="styleSheet">
-         <string notr="true">QFrame {
-    width: 100%;
-    background:   #fff8f2;
-    border-radius: 5px;
-    padding-bottom: 13px;
-    box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
-	padding-top:15px;
-}</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_5">
-         <item row="0" column="1">
-          <layout class="QGridLayout" name="gridLayout_4">
-           <property name="horizontalSpacing">
-            <number>15</number>
-           </property>
-           <property name="verticalSpacing">
-            <number>20</number>
-           </property>
-           <item row="1" column="2">
-            <widget class="QLabel" name="label_18">
-             <property name="maximumSize">
-              <size>
-               <width>101</width>
-               <height>41</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>RMA Num：</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="3">
-            <widget class="QLineEdit" name="RMA_num_lineEdit_0_2">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>201</width>
-               <height>31</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>201</width>
-               <height>31</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QDateEdit" name="in_dateEdit_1_0">
-             <property name="minimumSize">
-              <size>
-               <width>200</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>200</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QComboBox{
-	font-family:&quot;黑体&quot;, Times, serif;
-	font-size: 12px;
-
-}</string>
-             </property>
-             <property name="wrapping">
-              <bool>false</bool>
-             </property>
-             <property name="frame">
-              <bool>true</bool>
-             </property>
-             <property name="buttonSymbols">
-              <enum>QAbstractSpinBox::UpDownArrows</enum>
-             </property>
-             <property name="accelerated">
-              <bool>true</bool>
-             </property>
-             <property name="showGroupSeparator" stdset="0">
-              <bool>true</bool>
-             </property>
-             <property name="calendarPopup">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="3">
-            <widget class="QLineEdit" name="credit_lineEdit_1_1">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>200</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>200</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_19">
-             <property name="maximumSize">
-              <size>
-               <width>130</width>
-               <height>16</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background:   #fff8f2;</string>
-             </property>
-             <property name="text">
-              <string>修改时间：</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="4">
-            <widget class="QLabel" name="label_20">
-             <property name="maximumSize">
-              <size>
-               <width>101</width>
-               <height>41</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>退货单号：</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="5">
-            <widget class="QLineEdit" name="lot_num_lineEdit_1_0">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>200</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>200</width>
-               <height>30</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <widget class="QLabel" name="label_11">
-             <property name="maximumSize">
-              <size>
-               <width>49</width>
-               <height>41</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>状态：</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="5">
-            <widget class="QLineEdit" name="return_lineEdit_0_2">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>201</width>
-               <height>31</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>201</width>
-               <height>31</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="4">
-            <widget class="QLabel" name="label_3">
-             <property name="maximumSize">
-              <size>
-               <width>130</width>
-               <height>16</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background:   #fff8f2;</string>
-             </property>
-             <property name="text">
-              <string>Lot Num：</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="2">
-            <widget class="QLabel" name="label_16">
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background:   #fff8f2;
- </string>
-             </property>
-             <property name="text">
-              <string>Case Num：</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="1">
-            <widget class="QComboBox" name="status_comboBox_0_2">
-             <property name="minimumSize">
-              <size>
-               <width>201</width>
-               <height>31</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>201</width>
-               <height>31</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>黑体</family>
-               <pointsize>-1</pointsize>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">QComboBox{
-	font-family:&quot;黑体&quot;, Times, serif;
-	font-size: 12px;
-
-}</string>
-             </property>
-             <property name="editable">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="0" column="0">
-          <spacer name="horizontalSpacer_3">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item row="0" column="2">
-          <spacer name="horizontalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-        </layout>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-   </item>
    <item row="1" column="0">
     <widget class="QGroupBox" name="groupBox_2">
      <property name="font">
@@ -976,27 +591,25 @@ QPushButton:pressed
 border-radius:5px;</string>
         </property>
         <layout class="QGridLayout" name="gridLayout_7">
-         <property name="leftMargin">
-          <number>20</number>
-         </property>
-         <property name="rightMargin">
-          <number>20</number>
-         </property>
-         <item row="0" column="7">
-          <widget class="QLineEdit" name="credit_lineEdit_1_3">
-           <property name="enabled">
-            <bool>false</bool>
+         <item row="0" column="6">
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
            </property>
-           <property name="minimumSize">
+           <property name="sizeHint" stdset="0">
             <size>
-             <width>100</width>
-             <height>30</height>
+             <width>710</width>
+             <height>20</height>
             </size>
            </property>
+          </spacer>
+         </item>
+         <item row="0" column="7">
+          <widget class="QLabel" name="label_23">
            <property name="maximumSize">
             <size>
-             <width>100</width>
-             <height>30</height>
+             <width>130</width>
+             <height>16777215</height>
             </size>
            </property>
            <property name="font">
@@ -1006,21 +619,97 @@ border-radius:5px;</string>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
+            <string notr="true">background:   #fff8f2;</string>
+           </property>
+           <property name="text">
+            <string>已选择：</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="2">
+         <item row="1" column="10">
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0" colspan="2">
+            <widget class="QPlainTextEdit" name="plainTextEdit">
+             <property name="minimumSize">
+              <size>
+               <width>119</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>119</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPlainTextEdit {
+	border-style: solid;
+	background-color: rgb(255, 255, 255);
+	border-color: rgb(0, 0, 0);
+	border-width:1px;
+	border-radius:1px;
+}</string>
+             </property>
+             <property name="plainText">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="minimumSize">
+              <size>
+               <width>49</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>49</width>
+               <height>20</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:   #fff8f2;</string>
+             </property>
+             <property name="text">
+              <string> 总数：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>64</width>
+               <height>20</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="3">
           <widget class="QPushButton" name="pushButton">
            <property name="minimumSize">
             <size>
-             <width>91</width>
+             <width>90</width>
              <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>91</width>
+             <width>90</width>
              <height>23</height>
             </size>
            </property>
@@ -1056,21 +745,42 @@ QPushButton:pressed
            </property>
           </widget>
          </item>
-         <item row="0" column="3">
-          <spacer name="horizontalSpacer_5">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
+         <item row="0" column="8">
+          <widget class="QLineEdit" name="credit_lineEdit_1_8">
+           <property name="enabled">
+            <bool>false</bool>
            </property>
-           <property name="sizeHint" stdset="0">
+           <property name="minimumSize">
             <size>
-             <width>710</width>
-             <height>20</height>
+             <width>100</width>
+             <height>30</height>
             </size>
            </property>
-          </spacer>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+          </widget>
          </item>
-         <item row="1" column="0" colspan="8">
+         <item row="1" column="1" colspan="9">
           <widget class="QTableWidget" name="tableWidget">
+           <property name="minimumSize">
+            <size>
+             <width>1351</width>
+             <height>0</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>黑体</family>
@@ -1107,7 +817,7 @@ QTableWidget::Item{
             <number>1000</number>
            </property>
            <attribute name="horizontalHeaderDefaultSectionSize">
-            <number>118</number>
+            <number>131</number>
            </attribute>
            <attribute name="horizontalHeaderStretchLastSection">
             <bool>true</bool>
@@ -2213,34 +1923,18 @@ QTableWidget::Item{
            </item>
           </widget>
          </item>
-         <item row="0" column="0">
-          <widget class="QCheckBox" name="checkBox">
-           <property name="font">
-            <font>
-             <family>黑体</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="text">
-            <string>全选</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="5">
-          <widget class="QLineEdit" name="credit_lineEdit_1_8">
-           <property name="enabled">
-            <bool>false</bool>
-           </property>
+         <item row="0" column="4">
+          <widget class="QPushButton" name="pushButton_8">
            <property name="minimumSize">
             <size>
-             <width>100</width>
-             <height>30</height>
+             <width>90</width>
+             <height>0</height>
             </size>
            </property>
            <property name="maximumSize">
             <size>
-             <width>100</width>
-             <height>30</height>
+             <width>90</width>
+             <height>23</height>
             </size>
            </property>
            <property name="font">
@@ -2250,55 +1944,35 @@ QTableWidget::Item{
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true"/>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="4">
-          <widget class="QLabel" name="label_23">
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>黑体</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background:   #fff8f2;</string>
+            <string notr="true">QPushButton {
+	border-radius:5px;
+	padding-top:5px;
+	padding-bottom: 5px;
+    background-color:#5cb0ff;
+}
+
+QPushButton:hover
+{
+    background-color:#00ff7f;   
+	border-radius:5px;
+}
+
+QPushButton:pressed
+{
+    padding-left:15px;
+	border-radius:5px;
+}</string>
            </property>
            <property name="text">
-            <string>已选择：</string>
+            <string>录入</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../static/img/arrow-96-48.gif</normaloff>../static/img/arrow-96-48.gif</iconset>
            </property>
           </widget>
          </item>
-         <item row="0" column="6">
-          <widget class="QLabel" name="label_22">
-           <property name="maximumSize">
-            <size>
-             <width>130</width>
-             <height>16777215</height>
-            </size>
-           </property>
-           <property name="font">
-            <font>
-             <family>黑体</family>
-             <pointsize>10</pointsize>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background:   #fff8f2;</string>
-           </property>
-           <property name="text">
-            <string>总数：</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
+         <item row="0" column="2">
           <widget class="QPushButton" name="refresh_pushButton_0_1">
            <property name="enabled">
             <bool>true</bool>
@@ -2352,6 +2026,539 @@ QPushButton:pressed
             <bool>false</bool>
            </property>
           </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QPushButton" name="pushButton_9">
+           <property name="minimumSize">
+            <size>
+             <width>90</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>90</width>
+             <height>23</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+	border-radius:5px;
+	padding-top:5px;
+	padding-bottom: 5px;
+    background-color:#fff8f2;
+	border-color:#929799;
+    border-style:solid;
+    border-width:0.5px;
+
+}
+
+QPushButton:hover
+{
+    background-color:#00ff7f;   
+	border-radius:5px;
+}
+
+QPushButton:pressed
+{
+    padding-left:15px;
+	border-radius:5px;
+}</string>
+           </property>
+           <property name="text">
+            <string>清空</string>
+           </property>
+           <property name="icon">
+            <iconset>
+             <normaloff>../static/img/x-mark-64.gif</normaloff>../static/img/x-mark-64.gif</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>12</width>
+             <height>12</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="10">
+          <widget class="QLineEdit" name="credit_lineEdit_1_3">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>100</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="checkBox">
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>全选</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="9">
+          <widget class="QLabel" name="label_22">
+           <property name="maximumSize">
+            <size>
+             <width>130</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>黑体</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background:   #fff8f2;</string>
+           </property>
+           <property name="text">
+            <string>总数：</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="11">
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>183</height>
+      </size>
+     </property>
+     <property name="font">
+      <font>
+       <family>黑体</family>
+       <pointsize>10</pointsize>
+      </font>
+     </property>
+     <property name="title">
+      <string>基本信息栏</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QFrame" name="frame">
+        <property name="styleSheet">
+         <string notr="true">QFrame {
+    width: 100%;
+    background:   #fff8f2;
+    border-radius: 5px;
+    padding-bottom: 13px;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 20%);
+	padding-top:15px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="1">
+          <layout class="QGridLayout" name="gridLayout_4">
+           <property name="horizontalSpacing">
+            <number>15</number>
+           </property>
+           <property name="verticalSpacing">
+            <number>20</number>
+           </property>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_18">
+             <property name="maximumSize">
+              <size>
+               <width>101</width>
+               <height>41</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>RMA Num：</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLineEdit" name="RMA_num_lineEdit_0_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>201</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>201</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QDateEdit" name="in_dateEdit_1_0">
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	font-family:&quot;黑体&quot;, Times, serif;
+	font-size: 12px;
+
+}</string>
+             </property>
+             <property name="wrapping">
+              <bool>false</bool>
+             </property>
+             <property name="frame">
+              <bool>true</bool>
+             </property>
+             <property name="buttonSymbols">
+              <enum>QAbstractSpinBox::UpDownArrows</enum>
+             </property>
+             <property name="accelerated">
+              <bool>true</bool>
+             </property>
+             <property name="showGroupSeparator" stdset="0">
+              <bool>true</bool>
+             </property>
+             <property name="calendarPopup">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="credit_lineEdit_1_1">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_19">
+             <property name="maximumSize">
+              <size>
+               <width>130</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:   #fff8f2;</string>
+             </property>
+             <property name="text">
+              <string>修改时间：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QLabel" name="label_20">
+             <property name="maximumSize">
+              <size>
+               <width>101</width>
+               <height>41</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>退货单号：</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLineEdit" name="lot_num_lineEdit_1_0">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>200</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_11">
+             <property name="maximumSize">
+              <size>
+               <width>49</width>
+               <height>41</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>状态：</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QLineEdit" name="return_lineEdit_0_2">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>201</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>201</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_3">
+             <property name="maximumSize">
+              <size>
+               <width>130</width>
+               <height>16</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:   #fff8f2;</string>
+             </property>
+             <property name="text">
+              <string>Lot Num：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_16">
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background:   #fff8f2;
+ </string>
+             </property>
+             <property name="text">
+              <string>Case Num：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="status_comboBox_0_2">
+             <property name="minimumSize">
+              <size>
+               <width>201</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>201</width>
+               <height>31</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>黑体</family>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+	font-family:&quot;黑体&quot;, Times, serif;
+	font-size: 12px;
+
+}</string>
+             </property>
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="0" column="0">
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="2">
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
          </item>
         </layout>
        </widget>

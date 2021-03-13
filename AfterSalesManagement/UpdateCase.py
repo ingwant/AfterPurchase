@@ -47,6 +47,12 @@ class UpdateCase(QDialog):
         self.change_parameter_pushButton = self.update_case.pushButton
         self.refresh_pushButton = self.update_case.refresh_pushButton_0_1
 
+
+        self.plainTextEdit = self.update_case.plainTextEdit
+        self.in_amount_lineEdit = self.update_case.lineEdit
+        self.add_IEMI_pushButton = self.update_case.pushButton_8
+        self.clear_IEMI_pushButton = self.update_case.pushButton_9
+
         # 设置tableWidget的行数
         # self.tableWidget.setRowCount(999)
 
@@ -64,6 +70,13 @@ class UpdateCase(QDialog):
         self.tableWidget.cellChanged.connect(self.get_selected_amount)
 
         self.refresh_pushButton.clicked.connect(self.show_iphone_list_table)
+
+        self.clear_IEMI_pushButton.clicked.connect(lambda: self.com_function.clear_plainTextEdit(self.plainTextEdit))
+
+        self.plainTextEdit.textChanged.connect(lambda :self.com_function.set_IEMI_input_amount(self.plainTextEdit,self.in_amount_lineEdit))
+
+        self.add_IEMI_pushButton.clicked.connect(self.checked_import_data_by_input)
+
 
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("./static/img/sinchronize-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
@@ -85,6 +98,14 @@ class UpdateCase(QDialog):
         icon.addPixmap(QtGui.QPixmap("./static/img/sinchronize-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.refresh_pushButton.setIcon(icon)
 
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("./static/img/arrow-96-48.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.add_IEMI_pushButton.setIcon(icon)
+
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("./static/img/x-mark-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.clear_IEMI_pushButton.setIcon(icon)
+
         # 设置字体
         # font = QtGui.QFont()
         # font.setFamily("黑体")
@@ -103,11 +124,11 @@ class UpdateCase(QDialog):
         self.com_function.set_case_status(self.status)
         self.com_function.set_operation(self.operation)
 
-        self.status.setCurrentText(value_list[9])
+        self.status.setCurrentText(value_list[10])
         self.case_num.setText(value_list[0])
         self.lot_num.setText(value_list[3])
-        self.RMA_num.setText(value_list[7])
-        self.tracking_number.setText(value_list[8])
+        self.RMA_num.setText(value_list[8])
+        self.tracking_number.setText(value_list[9])
 
         self.show_iphone_list_table()
 
@@ -300,6 +321,10 @@ class UpdateCase(QDialog):
             QMessageBox.information(self, "提示", f"未录入IEMI列表:\n{no_find_IEMI_list}", QMessageBox.Ok)
 
         # self.change_parameter()
+
+    def checked_import_data_by_input(self):
+        IEMI_list = self.com_function.get_IEMI_list(self.plainTextEdit)
+        self.checked_import_data(IEMI_list)
 
 
     def show_iphone_list_table(self):

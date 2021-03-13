@@ -1,6 +1,6 @@
 # coding: UTF-8
 import time
-from PyQt5.QtWidgets import QFileDialog, QTableWidgetItem, QMessageBox, QDialog, QHeaderView
+from PyQt5.QtWidgets import QFileDialog, QTableWidgetItem, QMessageBox, QDialog, QHeaderView, QDesktopWidget
 from PyQt5 import QtCore, QtWidgets, QtGui
 import pandas as pd
 import numpy as np
@@ -85,6 +85,16 @@ class MainWindow(QMainWindow):
         self.amount_lineEdit_0 = self.main_ui.credit_lineEdit_1_3
         self.file_name_lineEdit_0 = self.main_ui.credit_lineEdit_1_2
 
+        # 设置IEMI复制粘贴输入框
+        self.plainTextEdit = self.main_ui.plainTextEdit
+        self.in_amount_lineEdit = self.main_ui.lineEdit
+        self.add_IEMI_pushButton = self.main_ui.pushButton_8
+        self.clear_IEMI_pushButton = self.main_ui.pushButton_9
+
+        self.plainTextEdit.textChanged.connect(
+            lambda: self.com_fun.set_IEMI_input_amount(self.plainTextEdit, self.in_amount_lineEdit))
+        self.add_IEMI_pushButton.clicked.connect(self.set_data_by_input)
+
         self.iphone_info_tableWidget_0.setRowCount(999)
         self.type_tableWidget_0.setRowCount(1)
 
@@ -111,6 +121,7 @@ class MainWindow(QMainWindow):
         self.add_iphone_type_pushButton_0.clicked.connect(self.create_iphone_type_list)
         self.add_iphone_type_pushButton_0.clicked.connect(self.check_item)
         self.get_iphone_type_pushButton_0.clicked.connect(self.get_type_list_item)
+        self.clear_IEMI_pushButton.clicked.connect(lambda: self.com_fun.clear_plainTextEdit(self.plainTextEdit))
 
         # 设置lot num 默认参数
         default_lot_num = time.strftime("%Y%m%d-", time.localtime())[2:]
@@ -158,6 +169,14 @@ class MainWindow(QMainWindow):
         icon.addPixmap(QtGui.QPixmap("./static/img/excel-3-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.import_data_pushButton.setIcon(icon)
 
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("./static/img/arrow-96-48.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.add_IEMI_pushButton.setIcon(icon)
+
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("./static/img/x-mark-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.clear_IEMI_pushButton.setIcon(icon)
+
         # 查询统计单页面参数
         self.create_time_checkBox_1 = self.main_ui.checkBox_2
         self.create_time_dateEdit_1 = self.main_ui.create_dateEdit_0_1
@@ -169,7 +188,8 @@ class MainWindow(QMainWindow):
         self.refresh_pushButton_1 = self.main_ui.refresh_pushButton_0_1
         self.amount_lineEdit_1 = self.main_ui.count_lineEdit_0_1
         self.case_info_tableWidget_1 = self.main_ui.tableWidget_0_1
-        self.IEMI_comboBox_1 = self.main_ui.supply_comboBox_0_2
+        self.search_IEMI_comboBox_1 = self.main_ui.supply_comboBox_0_2
+        self.search_credit_lineEdit = self.main_ui.credit_lineEdit_1_6
 
         self.create_time_dateEdit_1.setDisplayFormat("yyyy-MM-dd")
         self.create_time_dateEdit_1.setDate(QtCore.QDate.currentDate())
@@ -177,7 +197,7 @@ class MainWindow(QMainWindow):
         self.com_fun.set_supply_company(self.supply_company_comboBox_1)
         self.com_fun.set_case_status(self.status_comboBox_1)
 
-        self.search_pushButton_1.clicked.connect(self.search_case)
+        self.search_pushButton_1.clicked.connect(self.show_search_cases_table)
         self.again_pushButton_1.clicked.connect(self.again_case)
         # self.case_info_tableWidget_1.horizontalHeader().setSectionResizeMode(QHeaderView.Stretch)
         # self.case_info_tableWidget_1.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeToContents)
@@ -228,6 +248,15 @@ class MainWindow(QMainWindow):
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("./static/img/redo-2-128.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.again_pushButton_2.setIcon(icon)
+
+    def center(self):  # 定义一个函数使得窗口居中显示
+        # 获取屏幕坐标系
+        screen = QDesktopWidget().screenGeometry()
+        # 获取窗口坐标系
+        size = self.geometry()
+        newLeft = (screen.width() - size.width()) / 2
+        newTop = (screen.height() - size.height()) / 2
+        self.move(int(newLeft), int(newTop) - 30)
 
     # 定义方法用于切换窗口
     def on_clicked(self, pushbutton):
@@ -532,8 +561,9 @@ class MainWindow(QMainWindow):
                             QMessageBox.information(self, '提示', "更新入库单失败。", QMessageBox.Ok)
                             return
                     else:
-                        result = self.db.create_receipt_table(lot_num, in_time, supply_company, credits_num, iphone_type, amount,
-                                                     iphone_storage)
+                        result = self.db.create_receipt_table(lot_num, in_time, supply_company, credits_num,
+                                                              iphone_type, amount,
+                                                              iphone_storage)
                         if result:
                             QMessageBox.information(self, '提示', "创建入库单失败。", QMessageBox.Ok)
                             return
@@ -548,12 +578,14 @@ class MainWindow(QMainWindow):
                 check_case_result = self.db.check_case_num(case_id)
                 print(check_case_result)
                 if check_case_result:
-                    result = self.db.update_case(case_id, create_time, lot_num, bad_count, bad_rate, status, responsible)
+                    result = self.db.update_case(case_id, create_time, lot_num, bad_count, bad_rate, status,
+                                                 responsible)
                     if result:
                         QMessageBox.information(self, '提示', "更新统计单失败。", QMessageBox.Ok)
                         return
                 else:
-                    result = self.db.create_case(case_id, create_time, lot_num, bad_count, bad_rate, status, responsible)
+                    result = self.db.create_case(case_id, create_time, lot_num, bad_count, bad_rate, status,
+                                                 responsible)
                     if result:
                         QMessageBox.information(self, '提示', "创建统计单失败。", QMessageBox.Ok)
                         return
@@ -623,15 +655,92 @@ class MainWindow(QMainWindow):
             receipt_table_info = self.db.get_receipt_info(lot_num)
             in_time = list(receipt_table_info[0])[0]
             supply_company = list(receipt_table_info[0])[1]
+            credit_num = list(receipt_table_info[0])[2]
 
             receipt.insert(1, str(in_time))
             receipt.insert(4, str(supply_company))
+            receipt.insert(5, str(credit_num))
 
             for column, value in enumerate(receipt):
                 value = QTableWidgetItem(str(value))
                 self.case_info_tableWidget_1.setItem(row, column, value)
 
             self.set_option_detail(row_count, self.case_info_tableWidget_1, self.case_info_tableWidget_1.columnCount())
+
+    def show_search_cases_table(self):
+        self.case_info_tableWidget_1.clearContents()
+        self.case_info_tableWidget_1.setRowCount(0)
+        self.amount_lineEdit_1.clear()
+
+        search_list = []
+        search_result_list = []
+        results = self.db.get_cases()
+
+        state = self.create_time_checkBox_1.checkState()
+        print(state)
+
+        create_time = self.create_time_dateEdit_1.text().strip()
+        lot_num = self.lot_num_comboBox_1.currentText().strip()
+        supply_company = self.supply_company_comboBox_1.currentText().strip()
+        status = self.status_comboBox_1.currentText().strip()
+        IEMI = self.search_IEMI_comboBox_1.currentText().strip()
+        credit_num = self.search_credit_lineEdit.text().strip()
+
+
+        if state:
+            search_list.append(create_time)
+        if lot_num:
+            search_list.append(lot_num)
+        if supply_company:
+            search_list.append(supply_company)
+        if status:
+            search_list.append(status)
+        if IEMI:
+            case_num = self.db.get_case_id_by_IEMI(IEMI)
+            if case_num:
+                case_num = list(case_num[0])[0]
+                search_list.append(case_num)
+        if credit_num:
+            search_list.append(credit_num)
+
+        if search_list == []:
+            return
+        else:
+            for row, item in enumerate(results):
+                receipt = list(item)
+                del receipt[0]
+                lot_num = receipt[2]
+                receipt_table_info = self.db.get_receipt_info(lot_num)
+                in_time = list(receipt_table_info[0])[0]
+                supply_company = list(receipt_table_info[0])[1]
+                credit_num = list(receipt_table_info[0])[2]
+
+                receipt.insert(1, str(in_time))
+                receipt.insert(4, str(supply_company))
+                receipt.insert(5, str(credit_num))
+
+                receipt[2] = str(receipt[2])
+
+                print(receipt)
+                if set(search_list).issubset(set(receipt)):
+                    search_result_list.append(receipt)
+                else:
+                    continue
+
+            row_count = len(search_result_list)
+            print(row_count)
+            print(search_list)
+            if row_count == 0:
+                pass
+            else:
+                self.amount_lineEdit_1.setText(str(row_count))
+                self.case_info_tableWidget_1.setRowCount(row_count)
+                for row, search_result in enumerate(search_result_list):
+                    for column, value in enumerate(search_result):
+                        value = QTableWidgetItem(str(value))
+                        self.case_info_tableWidget_1.setItem(row, column, value)
+
+                    self.set_option_detail(row_count, self.case_info_tableWidget_1, self.case_info_tableWidget_1.columnCount())
 
     def set_option_detail(self, row_count, tableWidget, column):
         if tableWidget == self.case_info_tableWidget_1:
@@ -913,7 +1022,8 @@ class MainWindow(QMainWindow):
         self.lot_num_comboBox_1.clearEditText()
         self.supply_company_comboBox_1.clearEditText()
         self.status_comboBox_1.clearEditText()
-        self.IEMI_comboBox_1.clearEditText()
+        self.search_IEMI_comboBox_1.clearEditText()
+        self.search_credit_lineEdit.clear()
 
     def again_receipt(self):
         self.in_time_checkBox_2.setChecked(False)
@@ -961,17 +1071,34 @@ class MainWindow(QMainWindow):
             return
         else:
             try:
+                start_row = self.get_start_row()
+                print(start_row)
                 for row, IEMI in enumerate(IEMI_list):
                     info_list.insert(0, IEMI)
                     for column, item in enumerate(info_list):
                         item = QTableWidgetItem(str(item))
-                        self.iphone_info_tableWidget_0.setItem(row, column, item)
+                        self.iphone_info_tableWidget_0.setItem(row + start_row, column, item)
                     info_list.remove(IEMI)
 
                 bad_amount = self.get_table_widget_item(self.iphone_info_tableWidget_0)
                 self.amount_lineEdit_0.setText(str(len(bad_amount)))
-            except:
+            except Exception as e:
+                print(e)
                 pass
+
+    def set_data_by_input(self):
+        IEMI_list = self.com_fun.get_IEMI_list(self.plainTextEdit)
+        self.import_set_data(IEMI_list)
+
+    def get_start_row(self):
+        row_count = self.iphone_info_tableWidget_0.rowCount()
+        for row in range(row_count):
+            item = self.iphone_info_tableWidget_0.item(row, 0)
+            print(item)
+            if item is not None:
+                continue
+            else:
+                return row
 
 
 if __name__ == "__main__":
@@ -991,6 +1118,7 @@ if __name__ == "__main__":
         QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps, True)
     app = QtWidgets.QApplication(sys.argv)
     MainWindow = MainWindow()
+    MainWindow.center()
     window_icon = QtGui.QIcon()
     window_icon.addPixmap(QtGui.QPixmap("./static/img/cow-2-256.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
     MainWindow.setWindowIcon(window_icon)

@@ -14,9 +14,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1596, 832)
+        MainWindow.resize(1864, 900)
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/cow-2-256.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         MainWindow.setWindowIcon(icon)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
@@ -80,7 +80,7 @@ class Ui_MainWindow(object):
 "    border-radius:10px;\n"
 "}")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/add-list-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.CheckCountPB.setIcon(icon1)
         self.CheckCountPB.setIconSize(QtCore.QSize(20, 20))
         self.CheckCountPB.setCheckable(True)
@@ -120,7 +120,7 @@ class Ui_MainWindow(object):
 "    border-radius:10px;\n"
 "}")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/search-3-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.ProductSearchPB.setIcon(icon2)
         self.ProductSearchPB.setIconSize(QtCore.QSize(20, 20))
         self.ProductSearchPB.setCheckable(True)
@@ -180,449 +180,6 @@ class Ui_MainWindow(object):
         self.page.setObjectName("page")
         self.gridLayout_8 = QtWidgets.QGridLayout(self.page)
         self.gridLayout_8.setObjectName("gridLayout_8")
-        self.groupBox_3 = QtWidgets.QGroupBox(self.page)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.groupBox_3.setFont(font)
-        self.groupBox_3.setStyleSheet("QGroupBox  {\n"
-"    width: 100%;\n"
-"    background:   #fff8f2;\n"
-"}")
-        self.groupBox_3.setObjectName("groupBox_3")
-        self.gridLayout_9 = QtWidgets.QGridLayout(self.groupBox_3)
-        self.gridLayout_9.setContentsMargins(-1, -1, -1, 15)
-        self.gridLayout_9.setHorizontalSpacing(15)
-        self.gridLayout_9.setVerticalSpacing(21)
-        self.gridLayout_9.setObjectName("gridLayout_9")
-        self.label_4 = QtWidgets.QLabel(self.groupBox_3)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_4.setFont(font)
-        self.label_4.setStyleSheet("background:   #fff8f2;")
-        self.label_4.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_4.setObjectName("label_4")
-        self.gridLayout_9.addWidget(self.label_4, 0, 3, 1, 1)
-        self.label_27 = QtWidgets.QLabel(self.groupBox_3)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_27.setFont(font)
-        self.label_27.setStyleSheet("background:   #fff8f2;")
-        self.label_27.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_27.setObjectName("label_27")
-        self.gridLayout_9.addWidget(self.label_27, 0, 5, 1, 1)
-        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox_3)
-        self.pushButton_3.setMinimumSize(QtCore.QSize(120, 28))
-        self.pushButton_3.setMaximumSize(QtCore.QSize(120, 28))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.pushButton_3.setFont(font)
-        self.pushButton_3.setStyleSheet("QPushButton {\n"
-"    border-radius:5px;\n"
-"    padding-top:5px;\n"
-"    padding-bottom: 5px;\n"
-"    background-color:#5cb0ff;\n"
-"}\n"
-"\n"
-"QPushButton:hover\n"
-"{\n"
-"    background-color:#00ff7f;   \n"
-"    border-radius:5px;\n"
-"}\n"
-"\n"
-"QPushButton:pressed\n"
-"{\n"
-"    padding-left:15px;\n"
-"    border-radius:5px;\n"
-"}")
-        icon4 = QtGui.QIcon()
-        icon4.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_3.setIcon(icon4)
-        self.pushButton_3.setObjectName("pushButton_3")
-        self.gridLayout_9.addWidget(self.pushButton_3, 0, 9, 1, 1)
-        self.credit_lineEdit_1_4 = QtWidgets.QLineEdit(self.groupBox_3)
-        self.credit_lineEdit_1_4.setMinimumSize(QtCore.QSize(200, 30))
-        self.credit_lineEdit_1_4.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.credit_lineEdit_1_4.setFont(font)
-        self.credit_lineEdit_1_4.setObjectName("credit_lineEdit_1_4")
-        self.gridLayout_9.addWidget(self.credit_lineEdit_1_4, 1, 2, 1, 1)
-        self.label_11 = QtWidgets.QLabel(self.groupBox_3)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_11.setFont(font)
-        self.label_11.setStyleSheet("background:   #fff8f2;")
-        self.label_11.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_11.setObjectName("label_11")
-        self.gridLayout_9.addWidget(self.label_11, 1, 1, 1, 1)
-        self.comboBox_2 = QtWidgets.QComboBox(self.groupBox_3)
-        self.comboBox_2.setMinimumSize(QtCore.QSize(200, 30))
-        self.comboBox_2.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(-1)
-        self.comboBox_2.setFont(font)
-        self.comboBox_2.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.comboBox_2.setEditable(True)
-        self.comboBox_2.setObjectName("comboBox_2")
-        self.gridLayout_9.addWidget(self.comboBox_2, 0, 4, 1, 1)
-        self.credit_lineEdit_1_2 = QtWidgets.QLineEdit(self.groupBox_3)
-        self.credit_lineEdit_1_2.setEnabled(False)
-        self.credit_lineEdit_1_2.setMinimumSize(QtCore.QSize(200, 30))
-        self.credit_lineEdit_1_2.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.credit_lineEdit_1_2.setFont(font)
-        self.credit_lineEdit_1_2.setObjectName("credit_lineEdit_1_2")
-        self.gridLayout_9.addWidget(self.credit_lineEdit_1_2, 1, 8, 1, 1)
-        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_9.addItem(spacerItem1, 0, 0, 1, 1)
-        self.type_comboBox_1_1 = QtWidgets.QComboBox(self.groupBox_3)
-        self.type_comboBox_1_1.setMinimumSize(QtCore.QSize(200, 30))
-        self.type_comboBox_1_1.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(-1)
-        self.type_comboBox_1_1.setFont(font)
-        self.type_comboBox_1_1.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.type_comboBox_1_1.setEditable(True)
-        self.type_comboBox_1_1.setObjectName("type_comboBox_1_1")
-        self.gridLayout_9.addWidget(self.type_comboBox_1_1, 0, 2, 1, 1)
-        self.label_18 = QtWidgets.QLabel(self.groupBox_3)
-        self.label_18.setMaximumSize(QtCore.QSize(130, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_18.setFont(font)
-        self.label_18.setStyleSheet("background:   #fff8f2;")
-        self.label_18.setObjectName("label_18")
-        self.gridLayout_9.addWidget(self.label_18, 0, 1, 1, 1)
-        self.comboBox_3 = QtWidgets.QComboBox(self.groupBox_3)
-        self.comboBox_3.setMinimumSize(QtCore.QSize(200, 30))
-        self.comboBox_3.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(-1)
-        self.comboBox_3.setFont(font)
-        self.comboBox_3.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.comboBox_3.setEditable(True)
-        self.comboBox_3.setObjectName("comboBox_3")
-        self.gridLayout_9.addWidget(self.comboBox_3, 0, 8, 1, 1)
-        self.label_10 = QtWidgets.QLabel(self.groupBox_3)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_10.setFont(font)
-        self.label_10.setStyleSheet("background:   #fff8f2;")
-        self.label_10.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_10.setObjectName("label_10")
-        self.gridLayout_9.addWidget(self.label_10, 1, 7, 1, 1)
-        self.label_5 = QtWidgets.QLabel(self.groupBox_3)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_5.setFont(font)
-        self.label_5.setStyleSheet("background:   #fff8f2;")
-        self.label_5.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
-        self.label_5.setObjectName("label_5")
-        self.gridLayout_9.addWidget(self.label_5, 0, 7, 1, 1)
-        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_9.addItem(spacerItem2, 0, 10, 1, 1)
-        self.pushButton_7 = QtWidgets.QPushButton(self.groupBox_3)
-        self.pushButton_7.setMinimumSize(QtCore.QSize(120, 28))
-        self.pushButton_7.setMaximumSize(QtCore.QSize(120, 28))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.pushButton_7.setFont(font)
-        self.pushButton_7.setStyleSheet("QPushButton {\n"
-"    border-radius:5px;\n"
-"    padding-top:5px;\n"
-"    padding-bottom: 5px;\n"
-"    background-color:#5cb0ff;\n"
-"}\n"
-"\n"
-"QPushButton:hover\n"
-"{\n"
-"    background-color:#00ff7f;   \n"
-"    border-radius:5px;\n"
-"}\n"
-"\n"
-"QPushButton:pressed\n"
-"{\n"
-"    padding-left:15px;\n"
-"    border-radius:5px;\n"
-"}")
-        icon5 = QtGui.QIcon()
-        icon5.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_7.setIcon(icon5)
-        self.pushButton_7.setObjectName("pushButton_7")
-        self.gridLayout_9.addWidget(self.pushButton_7, 1, 9, 1, 1)
-        self.comboBox_4 = QtWidgets.QComboBox(self.groupBox_3)
-        self.comboBox_4.setMinimumSize(QtCore.QSize(200, 30))
-        self.comboBox_4.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(-1)
-        self.comboBox_4.setFont(font)
-        self.comboBox_4.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.comboBox_4.setEditable(True)
-        self.comboBox_4.setObjectName("comboBox_4")
-        self.gridLayout_9.addWidget(self.comboBox_4, 0, 6, 1, 1)
-        self.credit_lineEdit_1_3 = QtWidgets.QLineEdit(self.groupBox_3)
-        self.credit_lineEdit_1_3.setEnabled(False)
-        self.credit_lineEdit_1_3.setMinimumSize(QtCore.QSize(200, 30))
-        self.credit_lineEdit_1_3.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.credit_lineEdit_1_3.setFont(font)
-        self.credit_lineEdit_1_3.setObjectName("credit_lineEdit_1_3")
-        self.gridLayout_9.addWidget(self.credit_lineEdit_1_3, 1, 6, 1, 1)
-        self.label_22 = QtWidgets.QLabel(self.groupBox_3)
-        self.label_22.setMaximumSize(QtCore.QSize(130, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_22.setFont(font)
-        self.label_22.setStyleSheet("background:   #fff8f2;")
-        self.label_22.setObjectName("label_22")
-        self.gridLayout_9.addWidget(self.label_22, 1, 5, 1, 1)
-        self.credit_lineEdit_1_5 = QtWidgets.QLineEdit(self.groupBox_3)
-        self.credit_lineEdit_1_5.setMinimumSize(QtCore.QSize(200, 30))
-        self.credit_lineEdit_1_5.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.credit_lineEdit_1_5.setFont(font)
-        self.credit_lineEdit_1_5.setObjectName("credit_lineEdit_1_5")
-        self.gridLayout_9.addWidget(self.credit_lineEdit_1_5, 1, 4, 1, 1)
-        self.tableWidget_2 = QtWidgets.QTableWidget(self.groupBox_3)
-        self.tableWidget_2.setMaximumSize(QtCore.QSize(1085, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.tableWidget_2.setFont(font)
-        self.tableWidget_2.setStyleSheet("QHeaderView {\n"
-"    border:1px;\n"
-"\n"
-"}\n"
-"\n"
-"QHeaderView::section{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"    border-radius:14px;\n"
-"    border-bottom:1px solid #d0c6ff;\n"
-"    text-align:left;\n"
-"}\n"
-"\n"
-"QTableWidget::Item{\n"
-"    border-bottom:1px solid #d0c6ff;\n"
-"    color: black;\n"
-"}")
-        self.tableWidget_2.setShowGrid(False)
-        self.tableWidget_2.setRowCount(999)
-        self.tableWidget_2.setObjectName("tableWidget_2")
-        self.tableWidget_2.setColumnCount(7)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
-        self.tableWidget_2.setHorizontalHeaderItem(0, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
-        self.tableWidget_2.setHorizontalHeaderItem(1, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
-        self.tableWidget_2.setHorizontalHeaderItem(2, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
-        self.tableWidget_2.setHorizontalHeaderItem(3, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
-        self.tableWidget_2.setHorizontalHeaderItem(4, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
-        self.tableWidget_2.setHorizontalHeaderItem(5, item)
-        item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
-        self.tableWidget_2.setHorizontalHeaderItem(6, item)
-        self.tableWidget_2.horizontalHeader().setDefaultSectionSize(145)
-        self.gridLayout_9.addWidget(self.tableWidget_2, 2, 2, 1, 8)
-        self.label_28 = QtWidgets.QLabel(self.groupBox_3)
-        self.label_28.setMaximumSize(QtCore.QSize(130, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_28.setFont(font)
-        self.label_28.setStyleSheet("background:   #fff8f2;")
-        self.label_28.setObjectName("label_28")
-        self.gridLayout_9.addWidget(self.label_28, 1, 3, 1, 1)
-        self.gridLayout_8.addWidget(self.groupBox_3, 3, 0, 1, 1)
-        self.pushButton_5 = QtWidgets.QPushButton(self.page)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.pushButton_5.setFont(font)
-        self.pushButton_5.setStyleSheet("QPushButton {\n"
-"    border-radius:5px;\n"
-"    padding-top:5px;\n"
-"    padding-bottom: 5px;\n"
-"    background-color:#fff8f2;\n"
-"}\n"
-"\n"
-"QPushButton:hover\n"
-"{\n"
-"    background-color:#00ff7f;   \n"
-"    border-radius:5px;\n"
-"}\n"
-"\n"
-"QPushButton:pressed\n"
-"{\n"
-"    padding-left:15px;\n"
-"    border-radius:5px;\n"
-"}")
-        icon6 = QtGui.QIcon()
-        icon6.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_5.setIcon(icon6)
-        self.pushButton_5.setObjectName("pushButton_5")
-        self.gridLayout_8.addWidget(self.pushButton_5, 0, 0, 1, 1)
-        self.groupBox_2 = QtWidgets.QGroupBox(self.page)
-        self.groupBox_2.setMaximumSize(QtCore.QSize(16777215, 101))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.groupBox_2.setFont(font)
-        self.groupBox_2.setStyleSheet("QGroupBox  {\n"
-"    width: 100%;\n"
-"    background:   #fff8f2;\n"
-"}")
-        self.groupBox_2.setObjectName("groupBox_2")
-        self.horizontalLayout = QtWidgets.QHBoxLayout(self.groupBox_2)
-        self.horizontalLayout.setSpacing(24)
-        self.horizontalLayout.setObjectName("horizontalLayout")
-        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem3)
-        self.label_15 = QtWidgets.QLabel(self.groupBox_2)
-        self.label_15.setMaximumSize(QtCore.QSize(77, 41))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_15.setFont(font)
-        self.label_15.setStyleSheet("background:   #fff8f2;")
-        self.label_15.setObjectName("label_15")
-        self.horizontalLayout.addWidget(self.label_15)
-        self.dateEdit_5 = QtWidgets.QDateEdit(self.groupBox_2)
-        self.dateEdit_5.setMinimumSize(QtCore.QSize(200, 30))
-        self.dateEdit_5.setMaximumSize(QtCore.QSize(200, 32))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.dateEdit_5.setFont(font)
-        self.dateEdit_5.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.dateEdit_5.setCalendarPopup(True)
-        self.dateEdit_5.setObjectName("dateEdit_5")
-        self.horizontalLayout.addWidget(self.dateEdit_5)
-        self.label_14 = QtWidgets.QLabel(self.groupBox_2)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_14.setFont(font)
-        self.label_14.setStyleSheet("background:   #fff8f2;")
-        self.label_14.setObjectName("label_14")
-        self.horizontalLayout.addWidget(self.label_14)
-        self.type_comboBox_1_3 = QtWidgets.QComboBox(self.groupBox_2)
-        self.type_comboBox_1_3.setMinimumSize(QtCore.QSize(200, 30))
-        self.type_comboBox_1_3.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(-1)
-        self.type_comboBox_1_3.setFont(font)
-        self.type_comboBox_1_3.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.type_comboBox_1_3.setEditable(True)
-        self.type_comboBox_1_3.setObjectName("type_comboBox_1_3")
-        self.horizontalLayout.addWidget(self.type_comboBox_1_3)
-        self.label_16 = QtWidgets.QLabel(self.groupBox_2)
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_16.setFont(font)
-        self.label_16.setStyleSheet("background:   #fff8f2;\n"
-" ")
-        self.label_16.setObjectName("label_16")
-        self.horizontalLayout.addWidget(self.label_16)
-        self.credit_lineEdit_1_1 = QtWidgets.QLineEdit(self.groupBox_2)
-        self.credit_lineEdit_1_1.setEnabled(False)
-        self.credit_lineEdit_1_1.setMinimumSize(QtCore.QSize(200, 30))
-        self.credit_lineEdit_1_1.setMaximumSize(QtCore.QSize(200, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.credit_lineEdit_1_1.setFont(font)
-        self.credit_lineEdit_1_1.setObjectName("credit_lineEdit_1_1")
-        self.horizontalLayout.addWidget(self.credit_lineEdit_1_1)
-        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox_2)
-        self.pushButton_2.setMinimumSize(QtCore.QSize(120, 28))
-        self.pushButton_2.setMaximumSize(QtCore.QSize(120, 28))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.pushButton_2.setFont(font)
-        self.pushButton_2.setStyleSheet("QPushButton {\n"
-"    border-radius:5px;\n"
-"    padding-top:5px;\n"
-"    padding-bottom: 5px;\n"
-"    background-color:#5cb0ff;\n"
-"}\n"
-"\n"
-"QPushButton:hover\n"
-"{\n"
-"    background-color:#00ff7f;   \n"
-"    border-radius:5px;\n"
-"}\n"
-"\n"
-"QPushButton:pressed\n"
-"{\n"
-"    padding-left:15px;\n"
-"    border-radius:5px;\n"
-"}")
-        icon7 = QtGui.QIcon()
-        icon7.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_2.setIcon(icon7)
-        self.pushButton_2.setObjectName("pushButton_2")
-        self.horizontalLayout.addWidget(self.pushButton_2)
-        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.horizontalLayout.addItem(spacerItem4)
-        self.gridLayout_8.addWidget(self.groupBox_2, 2, 0, 1, 1)
         self.pushButton_4 = QtWidgets.QPushButton(self.page)
         font = QtGui.QFont()
         font.setFamily("黑体")
@@ -646,7 +203,9 @@ class Ui_MainWindow(object):
 "    padding-left:15px;\n"
 "    border-radius:5px;\n"
 "}")
-        self.pushButton_4.setIcon(icon6)
+        icon4 = QtGui.QIcon()
+        icon4.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/check-mark-3-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_4.setIcon(icon4)
         self.pushButton_4.setObjectName("pushButton_4")
         self.gridLayout_8.addWidget(self.pushButton_4, 4, 0, 1, 1)
         self.groupBox = QtWidgets.QGroupBox(self.page)
@@ -790,8 +349,8 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.label_19, 1, 1, 1, 1)
         self.verticalLayout_3 = QtWidgets.QVBoxLayout()
         self.verticalLayout_3.setObjectName("verticalLayout_3")
-        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.verticalLayout_3.addItem(spacerItem5)
+        spacerItem1 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.verticalLayout_3.addItem(spacerItem1)
         self.gridLayout_2.addLayout(self.verticalLayout_3, 1, 6, 1, 1)
         self.actual_count_spinBox_1_0 = QtWidgets.QSpinBox(self.groupBox)
         self.actual_count_spinBox_1_0.setMinimumSize(QtCore.QSize(200, 30))
@@ -833,9 +392,9 @@ class Ui_MainWindow(object):
 "    padding-left:15px;\n"
 "    border-radius:5px;\n"
 "}")
-        icon8 = QtGui.QIcon()
-        icon8.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton.setIcon(icon8)
+        icon5 = QtGui.QIcon()
+        icon5.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/add-row-128.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton.setIcon(icon5)
         self.pushButton.setObjectName("pushButton")
         self.gridLayout_2.addWidget(self.pushButton, 4, 4, 1, 1)
         self.label_7 = QtWidgets.QLabel(self.groupBox)
@@ -862,8 +421,8 @@ class Ui_MainWindow(object):
         self.type_comboBox_1_2.setEditable(True)
         self.type_comboBox_1_2.setObjectName("type_comboBox_1_2")
         self.gridLayout_2.addWidget(self.type_comboBox_1_2, 4, 2, 1, 1)
-        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_2.addItem(spacerItem6, 1, 0, 1, 1)
+        spacerItem2 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_2.addItem(spacerItem2, 1, 0, 1, 1)
         self.pushButton_6 = QtWidgets.QPushButton(self.groupBox)
         font = QtGui.QFont()
         font.setFamily("黑体")
@@ -891,9 +450,9 @@ class Ui_MainWindow(object):
 "    padding-left:15px;\n"
 "    border-radius:5px;\n"
 "}")
-        icon9 = QtGui.QIcon()
-        icon9.addPixmap(QtGui.QPixmap(""), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.pushButton_6.setIcon(icon9)
+        icon6 = QtGui.QIcon()
+        icon6.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/warning-38-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_6.setIcon(icon6)
         self.pushButton_6.setObjectName("pushButton_6")
         self.gridLayout_2.addWidget(self.pushButton_6, 1, 5, 1, 1)
         self.tableWidget = QtWidgets.QTableWidget(self.groupBox)
@@ -918,7 +477,6 @@ class Ui_MainWindow(object):
 "\n"
 "QTableWidget::Item{\n"
 "    border-bottom:1px solid #d0c6ff;\n"
-"    color: black;\n"
 "}")
         self.tableWidget.setShowGrid(False)
         self.tableWidget.setRowCount(10)
@@ -943,6 +501,529 @@ class Ui_MainWindow(object):
         self.gridLayout_2.addWidget(self.tableWidget, 2, 5, 3, 1)
         self.gridLayout.addLayout(self.gridLayout_2, 0, 0, 1, 1)
         self.gridLayout_8.addWidget(self.groupBox, 1, 0, 1, 1)
+        self.pushButton_5 = QtWidgets.QPushButton(self.page)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.pushButton_5.setFont(font)
+        self.pushButton_5.setStyleSheet("QPushButton {\n"
+"    border-radius:5px;\n"
+"    padding-top:5px;\n"
+"    padding-bottom: 5px;\n"
+"    background-color:#fff8f2;\n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#00ff7f;   \n"
+"    border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"    padding-left:15px;\n"
+"    border-radius:5px;\n"
+"}")
+        self.pushButton_5.setIcon(icon4)
+        self.pushButton_5.setObjectName("pushButton_5")
+        self.gridLayout_8.addWidget(self.pushButton_5, 0, 0, 1, 1)
+        self.groupBox_2 = QtWidgets.QGroupBox(self.page)
+        self.groupBox_2.setMaximumSize(QtCore.QSize(16777215, 101))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.groupBox_2.setFont(font)
+        self.groupBox_2.setStyleSheet("QGroupBox  {\n"
+"    width: 100%;\n"
+"    background:   #fff8f2;\n"
+"}")
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.groupBox_2)
+        self.horizontalLayout.setSpacing(24)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        spacerItem3 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem3)
+        self.label_15 = QtWidgets.QLabel(self.groupBox_2)
+        self.label_15.setMaximumSize(QtCore.QSize(77, 41))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_15.setFont(font)
+        self.label_15.setStyleSheet("background:   #fff8f2;")
+        self.label_15.setObjectName("label_15")
+        self.horizontalLayout.addWidget(self.label_15)
+        self.dateEdit_5 = QtWidgets.QDateEdit(self.groupBox_2)
+        self.dateEdit_5.setMinimumSize(QtCore.QSize(200, 30))
+        self.dateEdit_5.setMaximumSize(QtCore.QSize(200, 32))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.dateEdit_5.setFont(font)
+        self.dateEdit_5.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.dateEdit_5.setCalendarPopup(True)
+        self.dateEdit_5.setObjectName("dateEdit_5")
+        self.horizontalLayout.addWidget(self.dateEdit_5)
+        self.label_14 = QtWidgets.QLabel(self.groupBox_2)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_14.setFont(font)
+        self.label_14.setStyleSheet("background:   #fff8f2;")
+        self.label_14.setObjectName("label_14")
+        self.horizontalLayout.addWidget(self.label_14)
+        self.type_comboBox_1_3 = QtWidgets.QComboBox(self.groupBox_2)
+        self.type_comboBox_1_3.setMinimumSize(QtCore.QSize(200, 30))
+        self.type_comboBox_1_3.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(-1)
+        self.type_comboBox_1_3.setFont(font)
+        self.type_comboBox_1_3.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.type_comboBox_1_3.setEditable(True)
+        self.type_comboBox_1_3.setObjectName("type_comboBox_1_3")
+        self.horizontalLayout.addWidget(self.type_comboBox_1_3)
+        self.label_16 = QtWidgets.QLabel(self.groupBox_2)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_16.setFont(font)
+        self.label_16.setStyleSheet("background:   #fff8f2;\n"
+" ")
+        self.label_16.setObjectName("label_16")
+        self.horizontalLayout.addWidget(self.label_16)
+        self.credit_lineEdit_1_1 = QtWidgets.QLineEdit(self.groupBox_2)
+        self.credit_lineEdit_1_1.setEnabled(False)
+        self.credit_lineEdit_1_1.setMinimumSize(QtCore.QSize(200, 30))
+        self.credit_lineEdit_1_1.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.credit_lineEdit_1_1.setFont(font)
+        self.credit_lineEdit_1_1.setObjectName("credit_lineEdit_1_1")
+        self.horizontalLayout.addWidget(self.credit_lineEdit_1_1)
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox_2)
+        self.pushButton_2.setMinimumSize(QtCore.QSize(120, 28))
+        self.pushButton_2.setMaximumSize(QtCore.QSize(120, 28))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("QPushButton {\n"
+"    border-radius:5px;\n"
+"    padding-top:5px;\n"
+"    padding-bottom: 5px;\n"
+"    background-color:#5cb0ff;\n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#00ff7f;   \n"
+"    border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"    padding-left:15px;\n"
+"    border-radius:5px;\n"
+"}")
+        icon7 = QtGui.QIcon()
+        icon7.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/sinchronize-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_2.setIcon(icon7)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.horizontalLayout.addWidget(self.pushButton_2)
+        spacerItem4 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.horizontalLayout.addItem(spacerItem4)
+        self.gridLayout_8.addWidget(self.groupBox_2, 2, 0, 1, 1)
+        self.groupBox_3 = QtWidgets.QGroupBox(self.page)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.groupBox_3.setFont(font)
+        self.groupBox_3.setStyleSheet("QGroupBox  {\n"
+"    width: 100%;\n"
+"    background:   #fff8f2;\n"
+"}")
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.gridLayout_9 = QtWidgets.QGridLayout(self.groupBox_3)
+        self.gridLayout_9.setObjectName("gridLayout_9")
+        self.credit_lineEdit_1_4 = QtWidgets.QLineEdit(self.groupBox_3)
+        self.credit_lineEdit_1_4.setMinimumSize(QtCore.QSize(200, 30))
+        self.credit_lineEdit_1_4.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.credit_lineEdit_1_4.setFont(font)
+        self.credit_lineEdit_1_4.setObjectName("credit_lineEdit_1_4")
+        self.gridLayout_9.addWidget(self.credit_lineEdit_1_4, 1, 2, 1, 1)
+        self.label_4 = QtWidgets.QLabel(self.groupBox_3)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet("background:   #fff8f2;")
+        self.label_4.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_4.setObjectName("label_4")
+        self.gridLayout_9.addWidget(self.label_4, 0, 3, 1, 1)
+        self.credit_lineEdit_1_2 = QtWidgets.QLineEdit(self.groupBox_3)
+        self.credit_lineEdit_1_2.setEnabled(False)
+        self.credit_lineEdit_1_2.setMinimumSize(QtCore.QSize(200, 30))
+        self.credit_lineEdit_1_2.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.credit_lineEdit_1_2.setFont(font)
+        self.credit_lineEdit_1_2.setObjectName("credit_lineEdit_1_2")
+        self.gridLayout_9.addWidget(self.credit_lineEdit_1_2, 1, 8, 1, 1)
+        self.label_18 = QtWidgets.QLabel(self.groupBox_3)
+        self.label_18.setMaximumSize(QtCore.QSize(130, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_18.setFont(font)
+        self.label_18.setStyleSheet("background:   #fff8f2;")
+        self.label_18.setObjectName("label_18")
+        self.gridLayout_9.addWidget(self.label_18, 0, 1, 1, 1)
+        spacerItem5 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_9.addItem(spacerItem5, 0, 0, 1, 1)
+        self.comboBox_2 = QtWidgets.QComboBox(self.groupBox_3)
+        self.comboBox_2.setMinimumSize(QtCore.QSize(200, 30))
+        self.comboBox_2.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(-1)
+        self.comboBox_2.setFont(font)
+        self.comboBox_2.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.comboBox_2.setEditable(True)
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.gridLayout_9.addWidget(self.comboBox_2, 0, 4, 1, 1)
+        self.label_10 = QtWidgets.QLabel(self.groupBox_3)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_10.setFont(font)
+        self.label_10.setStyleSheet("background:   #fff8f2;")
+        self.label_10.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_10.setObjectName("label_10")
+        self.gridLayout_9.addWidget(self.label_10, 1, 7, 1, 1)
+        self.pushButton_7 = QtWidgets.QPushButton(self.groupBox_3)
+        self.pushButton_7.setMinimumSize(QtCore.QSize(120, 28))
+        self.pushButton_7.setMaximumSize(QtCore.QSize(120, 28))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.pushButton_7.setFont(font)
+        self.pushButton_7.setStyleSheet("QPushButton {\n"
+"    border-radius:5px;\n"
+"    padding-top:5px;\n"
+"    padding-bottom: 5px;\n"
+"    background-color:#5cb0ff;\n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#00ff7f;   \n"
+"    border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"    padding-left:15px;\n"
+"    border-radius:5px;\n"
+"}")
+        icon8 = QtGui.QIcon()
+        icon8.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/excel-3-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_7.setIcon(icon8)
+        self.pushButton_7.setObjectName("pushButton_7")
+        self.gridLayout_9.addWidget(self.pushButton_7, 1, 9, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.groupBox_3)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_5.setFont(font)
+        self.label_5.setStyleSheet("background:   #fff8f2;")
+        self.label_5.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_5.setObjectName("label_5")
+        self.gridLayout_9.addWidget(self.label_5, 0, 7, 1, 1)
+        self.credit_lineEdit_1_5 = QtWidgets.QLineEdit(self.groupBox_3)
+        self.credit_lineEdit_1_5.setMinimumSize(QtCore.QSize(200, 30))
+        self.credit_lineEdit_1_5.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.credit_lineEdit_1_5.setFont(font)
+        self.credit_lineEdit_1_5.setObjectName("credit_lineEdit_1_5")
+        self.gridLayout_9.addWidget(self.credit_lineEdit_1_5, 1, 4, 1, 1)
+        self.type_comboBox_1_1 = QtWidgets.QComboBox(self.groupBox_3)
+        self.type_comboBox_1_1.setMinimumSize(QtCore.QSize(200, 30))
+        self.type_comboBox_1_1.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(-1)
+        self.type_comboBox_1_1.setFont(font)
+        self.type_comboBox_1_1.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.type_comboBox_1_1.setEditable(True)
+        self.type_comboBox_1_1.setObjectName("type_comboBox_1_1")
+        self.gridLayout_9.addWidget(self.type_comboBox_1_1, 0, 2, 1, 1)
+        self.comboBox_3 = QtWidgets.QComboBox(self.groupBox_3)
+        self.comboBox_3.setMinimumSize(QtCore.QSize(200, 30))
+        self.comboBox_3.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(-1)
+        self.comboBox_3.setFont(font)
+        self.comboBox_3.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.comboBox_3.setEditable(True)
+        self.comboBox_3.setObjectName("comboBox_3")
+        self.gridLayout_9.addWidget(self.comboBox_3, 0, 8, 1, 1)
+        self.formLayout = QtWidgets.QFormLayout()
+        self.formLayout.setObjectName("formLayout")
+        self.label_2 = QtWidgets.QLabel(self.groupBox_3)
+        self.label_2.setMinimumSize(QtCore.QSize(49, 20))
+        self.label_2.setMaximumSize(QtCore.QSize(49, 20))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background:   #fff8f2;")
+        self.label_2.setObjectName("label_2")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.lineEdit = QtWidgets.QLineEdit(self.groupBox_3)
+        self.lineEdit.setEnabled(False)
+        self.lineEdit.setMaximumSize(QtCore.QSize(64, 20))
+        self.lineEdit.setObjectName("lineEdit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.lineEdit)
+        self.plainTextEdit = QtWidgets.QPlainTextEdit(self.groupBox_3)
+        self.plainTextEdit.setMaximumSize(QtCore.QSize(119, 16777215))
+        self.plainTextEdit.setObjectName("plainTextEdit")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.SpanningRole, self.plainTextEdit)
+        self.pushButton_8 = QtWidgets.QPushButton(self.groupBox_3)
+        self.pushButton_8.setMaximumSize(QtCore.QSize(119, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.pushButton_8.setFont(font)
+        self.pushButton_8.setStyleSheet("QPushButton {\n"
+"    border-radius:5px;\n"
+"    padding-top:5px;\n"
+"    padding-bottom: 5px;\n"
+"    background-color:#5cb0ff;\n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#00ff7f;   \n"
+"    border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"    padding-left:15px;\n"
+"    border-radius:5px;\n"
+"}")
+        icon9 = QtGui.QIcon()
+        icon9.addPixmap(QtGui.QPixmap(".\\../static/img/arrow-96-48.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_8.setIcon(icon9)
+        self.pushButton_8.setObjectName("pushButton_8")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.SpanningRole, self.pushButton_8)
+        self.pushButton_9 = QtWidgets.QPushButton(self.groupBox_3)
+        self.pushButton_9.setMaximumSize(QtCore.QSize(119, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.pushButton_9.setFont(font)
+        self.pushButton_9.setStyleSheet("QPushButton {\n"
+"    border-radius:5px;\n"
+"    padding-top:5px;\n"
+"    padding-bottom: 5px;\n"
+"    background-color:#fff8f2;\n"
+"    border-color:#929799;\n"
+"    border-style:solid;\n"
+"    border-width:0.5px;\n"
+"\n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#00ff7f;   \n"
+"    border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"    padding-left:15px;\n"
+"    border-radius:5px;\n"
+"}")
+        icon10 = QtGui.QIcon()
+        icon10.addPixmap(QtGui.QPixmap(".\\../static/img/x-mark-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_9.setIcon(icon10)
+        self.pushButton_9.setIconSize(QtCore.QSize(12, 12))
+        self.pushButton_9.setObjectName("pushButton_9")
+        self.formLayout.setWidget(3, QtWidgets.QFormLayout.SpanningRole, self.pushButton_9)
+        self.gridLayout_9.addLayout(self.formLayout, 2, 9, 1, 1)
+        self.label_28 = QtWidgets.QLabel(self.groupBox_3)
+        self.label_28.setMaximumSize(QtCore.QSize(130, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_28.setFont(font)
+        self.label_28.setStyleSheet("background:   #fff8f2;")
+        self.label_28.setObjectName("label_28")
+        self.gridLayout_9.addWidget(self.label_28, 1, 3, 1, 1)
+        self.tableWidget_2 = QtWidgets.QTableWidget(self.groupBox_3)
+        self.tableWidget_2.setMaximumSize(QtCore.QSize(1085, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.tableWidget_2.setFont(font)
+        self.tableWidget_2.setStyleSheet("QHeaderView {\n"
+"    border:1px;\n"
+"\n"
+"}\n"
+"\n"
+"QHeaderView::section{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"    border-radius:14px;\n"
+"    border-bottom:1px solid #d0c6ff;\n"
+"    text-align:left;\n"
+"}\n"
+"\n"
+"QTableWidget::Item{\n"
+"    border-bottom:1px solid #d0c6ff;\n"
+"    color: black;\n"
+"}")
+        self.tableWidget_2.setShowGrid(False)
+        self.tableWidget_2.setRowCount(999)
+        self.tableWidget_2.setObjectName("tableWidget_2")
+        self.tableWidget_2.setColumnCount(7)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget_2.setHorizontalHeaderItem(0, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget_2.setHorizontalHeaderItem(1, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget_2.setHorizontalHeaderItem(2, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget_2.setHorizontalHeaderItem(3, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget_2.setHorizontalHeaderItem(4, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget_2.setHorizontalHeaderItem(5, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
+        self.tableWidget_2.setHorizontalHeaderItem(6, item)
+        self.tableWidget_2.horizontalHeader().setDefaultSectionSize(145)
+        self.gridLayout_9.addWidget(self.tableWidget_2, 2, 1, 1, 8)
+        self.credit_lineEdit_1_3 = QtWidgets.QLineEdit(self.groupBox_3)
+        self.credit_lineEdit_1_3.setEnabled(False)
+        self.credit_lineEdit_1_3.setMinimumSize(QtCore.QSize(200, 30))
+        self.credit_lineEdit_1_3.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.credit_lineEdit_1_3.setFont(font)
+        self.credit_lineEdit_1_3.setObjectName("credit_lineEdit_1_3")
+        self.gridLayout_9.addWidget(self.credit_lineEdit_1_3, 1, 6, 1, 1)
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox_3)
+        self.pushButton_3.setMinimumSize(QtCore.QSize(120, 28))
+        self.pushButton_3.setMaximumSize(QtCore.QSize(120, 28))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.pushButton_3.setFont(font)
+        self.pushButton_3.setStyleSheet("QPushButton {\n"
+"    border-radius:5px;\n"
+"    padding-top:5px;\n"
+"    padding-bottom: 5px;\n"
+"    background-color:#5cb0ff;\n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#00ff7f;   \n"
+"    border-radius:5px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"    padding-left:15px;\n"
+"    border-radius:5px;\n"
+"}")
+        icon11 = QtGui.QIcon()
+        icon11.addPixmap(QtGui.QPixmap(".\\../../AfterSale/static/img/database-5-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.pushButton_3.setIcon(icon11)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.gridLayout_9.addWidget(self.pushButton_3, 0, 9, 1, 1)
+        self.label_27 = QtWidgets.QLabel(self.groupBox_3)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_27.setFont(font)
+        self.label_27.setStyleSheet("background:   #fff8f2;")
+        self.label_27.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_27.setObjectName("label_27")
+        self.gridLayout_9.addWidget(self.label_27, 0, 5, 1, 1)
+        self.label_22 = QtWidgets.QLabel(self.groupBox_3)
+        self.label_22.setMaximumSize(QtCore.QSize(130, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_22.setFont(font)
+        self.label_22.setStyleSheet("background:   #fff8f2;")
+        self.label_22.setObjectName("label_22")
+        self.gridLayout_9.addWidget(self.label_22, 1, 5, 1, 1)
+        self.comboBox_4 = QtWidgets.QComboBox(self.groupBox_3)
+        self.comboBox_4.setMinimumSize(QtCore.QSize(200, 30))
+        self.comboBox_4.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(-1)
+        self.comboBox_4.setFont(font)
+        self.comboBox_4.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.comboBox_4.setEditable(True)
+        self.comboBox_4.setObjectName("comboBox_4")
+        self.gridLayout_9.addWidget(self.comboBox_4, 0, 6, 1, 1)
+        self.label_11 = QtWidgets.QLabel(self.groupBox_3)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_11.setFont(font)
+        self.label_11.setStyleSheet("background:   #fff8f2;")
+        self.label_11.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_11.setObjectName("label_11")
+        self.gridLayout_9.addWidget(self.label_11, 1, 1, 1, 1)
+        spacerItem6 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_9.addItem(spacerItem6, 1, 10, 1, 1)
+        self.gridLayout_8.addWidget(self.groupBox_3, 3, 0, 1, 1)
         self.stackedWidget.addWidget(self.page)
         self.page_2 = QtWidgets.QWidget()
         self.page_2.setObjectName("page_2")
@@ -975,15 +1056,56 @@ class Ui_MainWindow(object):
         self.gridLayout_5 = QtWidgets.QGridLayout(self.frame_2)
         self.gridLayout_5.setHorizontalSpacing(10)
         self.gridLayout_5.setObjectName("gridLayout_5")
-        spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_5.addItem(spacerItem7, 0, 0, 1, 1)
-        self.checkBox_2 = QtWidgets.QCheckBox(self.frame_2)
+        self.search_pushButton_0_1 = QtWidgets.QPushButton(self.frame_2)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.search_pushButton_0_1.sizePolicy().hasHeightForWidth())
+        self.search_pushButton_0_1.setSizePolicy(sizePolicy)
+        self.search_pushButton_0_1.setMinimumSize(QtCore.QSize(100, 30))
+        self.search_pushButton_0_1.setMaximumSize(QtCore.QSize(100, 30))
         font = QtGui.QFont()
         font.setFamily("黑体")
-        font.setPointSize(10)
-        self.checkBox_2.setFont(font)
-        self.checkBox_2.setObjectName("checkBox_2")
-        self.gridLayout_5.addWidget(self.checkBox_2, 0, 1, 1, 1)
+        font.setPointSize(11)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setUnderline(False)
+        font.setWeight(50)
+        font.setStrikeOut(False)
+        font.setKerning(True)
+        self.search_pushButton_0_1.setFont(font)
+        self.search_pushButton_0_1.setStyleSheet("QPushButton {\n"
+"    border-radius:10px;\n"
+"    padding-top:5px;\n"
+"    padding-bottom: 5px;\n"
+"    border-color: black;\n"
+"    border-style:solid;\n"
+"    border-width:1px;\n"
+"    background-color:#00ff7f;   \n"
+"    margin-right: 10px;\n"
+"}\n"
+"\n"
+"QPushButton:hover\n"
+"{\n"
+"    background-color:#00aaff;\n"
+"    border-radius:10px;\n"
+"}\n"
+"\n"
+"QPushButton:pressed\n"
+"{\n"
+"    padding-left:15px;\n"
+"    border-radius:10px;\n"
+"}\n"
+"")
+        icon12 = QtGui.QIcon()
+        icon12.addPixmap(QtGui.QPixmap("D:/Projects/TrillionTech/images/search-13-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.search_pushButton_0_1.setIcon(icon12)
+        self.search_pushButton_0_1.setIconSize(QtCore.QSize(20, 20))
+        self.search_pushButton_0_1.setCheckable(False)
+        self.search_pushButton_0_1.setAutoRepeat(False)
+        self.search_pushButton_0_1.setAutoExclusive(False)
+        self.search_pushButton_0_1.setObjectName("search_pushButton_0_1")
+        self.gridLayout_5.addWidget(self.search_pushButton_0_1, 1, 8, 1, 1)
         self.create_dateEdit_0_1 = QtWidgets.QDateEdit(self.frame_2)
         self.create_dateEdit_0_1.setMinimumSize(QtCore.QSize(201, 31))
         self.create_dateEdit_0_1.setMaximumSize(QtCore.QSize(171, 16777215))
@@ -995,14 +1117,54 @@ class Ui_MainWindow(object):
         self.create_dateEdit_0_1.setCalendarPopup(True)
         self.create_dateEdit_0_1.setObjectName("create_dateEdit_0_1")
         self.gridLayout_5.addWidget(self.create_dateEdit_0_1, 0, 2, 1, 1)
-        self.label_8 = QtWidgets.QLabel(self.frame_2)
-        self.label_8.setMaximumSize(QtCore.QSize(49, 41))
+        self.status_comboBox_0_1 = QtWidgets.QComboBox(self.frame_2)
+        self.status_comboBox_0_1.setMinimumSize(QtCore.QSize(201, 31))
+        self.status_comboBox_0_1.setMaximumSize(QtCore.QSize(201, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(-1)
+        self.status_comboBox_0_1.setFont(font)
+        self.status_comboBox_0_1.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.status_comboBox_0_1.setEditable(True)
+        self.status_comboBox_0_1.setObjectName("status_comboBox_0_1")
+        self.gridLayout_5.addWidget(self.status_comboBox_0_1, 1, 4, 1, 1)
+        spacerItem7 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_5.addItem(spacerItem7, 0, 0, 1, 1)
+        self.lot_num_comboBox_0_1 = QtWidgets.QComboBox(self.frame_2)
+        self.lot_num_comboBox_0_1.setMinimumSize(QtCore.QSize(201, 31))
+        self.lot_num_comboBox_0_1.setMaximumSize(QtCore.QSize(201, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(-1)
+        self.lot_num_comboBox_0_1.setFont(font)
+        self.lot_num_comboBox_0_1.setStyleSheet("QComboBox{\n"
+"    font-family:\"黑体\", Times, serif;\n"
+"    font-size: 12px;\n"
+"\n"
+"}")
+        self.lot_num_comboBox_0_1.setEditable(True)
+        self.lot_num_comboBox_0_1.setObjectName("lot_num_comboBox_0_1")
+        self.gridLayout_5.addWidget(self.lot_num_comboBox_0_1, 1, 2, 1, 1)
+        self.label_21 = QtWidgets.QLabel(self.frame_2)
+        self.label_21.setMaximumSize(QtCore.QSize(77, 41))
         font = QtGui.QFont()
         font.setFamily("黑体")
         font.setPointSize(10)
-        self.label_8.setFont(font)
-        self.label_8.setObjectName("label_8")
-        self.gridLayout_5.addWidget(self.label_8, 0, 3, 1, 1)
+        self.label_21.setFont(font)
+        self.label_21.setObjectName("label_21")
+        self.gridLayout_5.addWidget(self.label_21, 1, 1, 1, 1)
+        self.label_9 = QtWidgets.QLabel(self.frame_2)
+        self.label_9.setMaximumSize(QtCore.QSize(100, 41))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_9.setFont(font)
+        self.label_9.setObjectName("label_9")
+        self.gridLayout_5.addWidget(self.label_9, 1, 3, 1, 1)
         self.supply_comboBox_0_1 = QtWidgets.QComboBox(self.frame_2)
         self.supply_comboBox_0_1.setMinimumSize(QtCore.QSize(201, 31))
         self.supply_comboBox_0_1.setMaximumSize(QtCore.QSize(201, 16777215))
@@ -1018,6 +1180,41 @@ class Ui_MainWindow(object):
         self.supply_comboBox_0_1.setEditable(True)
         self.supply_comboBox_0_1.setObjectName("supply_comboBox_0_1")
         self.gridLayout_5.addWidget(self.supply_comboBox_0_1, 0, 4, 1, 1)
+        spacerItem8 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
+        self.gridLayout_5.addItem(spacerItem8, 0, 9, 1, 1)
+        self.label_8 = QtWidgets.QLabel(self.frame_2)
+        self.label_8.setMaximumSize(QtCore.QSize(49, 41))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_8.setFont(font)
+        self.label_8.setObjectName("label_8")
+        self.gridLayout_5.addWidget(self.label_8, 0, 3, 1, 1)
+        self.checkBox_2 = QtWidgets.QCheckBox(self.frame_2)
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.checkBox_2.setFont(font)
+        self.checkBox_2.setObjectName("checkBox_2")
+        self.gridLayout_5.addWidget(self.checkBox_2, 0, 1, 1, 1)
+        self.credit_lineEdit_1_6 = QtWidgets.QLineEdit(self.frame_2)
+        self.credit_lineEdit_1_6.setMinimumSize(QtCore.QSize(200, 30))
+        self.credit_lineEdit_1_6.setMaximumSize(QtCore.QSize(200, 30))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.credit_lineEdit_1_6.setFont(font)
+        self.credit_lineEdit_1_6.setObjectName("credit_lineEdit_1_6")
+        self.gridLayout_5.addWidget(self.credit_lineEdit_1_6, 1, 6, 1, 1)
+        self.label_29 = QtWidgets.QLabel(self.frame_2)
+        self.label_29.setMaximumSize(QtCore.QSize(130, 16777215))
+        font = QtGui.QFont()
+        font.setFamily("黑体")
+        font.setPointSize(10)
+        self.label_29.setFont(font)
+        self.label_29.setStyleSheet("background:   #fff8f2;")
+        self.label_29.setObjectName("label_29")
+        self.gridLayout_5.addWidget(self.label_29, 1, 5, 1, 1)
         self.label_26 = QtWidgets.QLabel(self.frame_2)
         self.label_26.setMaximumSize(QtCore.QSize(77, 41))
         font = QtGui.QFont()
@@ -1040,55 +1237,7 @@ class Ui_MainWindow(object):
 "}")
         self.supply_comboBox_0_2.setEditable(True)
         self.supply_comboBox_0_2.setObjectName("supply_comboBox_0_2")
-        self.gridLayout_5.addWidget(self.supply_comboBox_0_2, 0, 6, 1, 2)
-        spacerItem8 = QtWidgets.QSpacerItem(40, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
-        self.gridLayout_5.addItem(spacerItem8, 0, 8, 1, 1)
-        self.label_21 = QtWidgets.QLabel(self.frame_2)
-        self.label_21.setMaximumSize(QtCore.QSize(77, 41))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_21.setFont(font)
-        self.label_21.setObjectName("label_21")
-        self.gridLayout_5.addWidget(self.label_21, 1, 1, 1, 1)
-        self.lot_num_comboBox_0_1 = QtWidgets.QComboBox(self.frame_2)
-        self.lot_num_comboBox_0_1.setMinimumSize(QtCore.QSize(201, 31))
-        self.lot_num_comboBox_0_1.setMaximumSize(QtCore.QSize(201, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(-1)
-        self.lot_num_comboBox_0_1.setFont(font)
-        self.lot_num_comboBox_0_1.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.lot_num_comboBox_0_1.setEditable(True)
-        self.lot_num_comboBox_0_1.setObjectName("lot_num_comboBox_0_1")
-        self.gridLayout_5.addWidget(self.lot_num_comboBox_0_1, 1, 2, 1, 1)
-        self.label_9 = QtWidgets.QLabel(self.frame_2)
-        self.label_9.setMaximumSize(QtCore.QSize(100, 41))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(10)
-        self.label_9.setFont(font)
-        self.label_9.setObjectName("label_9")
-        self.gridLayout_5.addWidget(self.label_9, 1, 3, 1, 1)
-        self.status_comboBox_0_1 = QtWidgets.QComboBox(self.frame_2)
-        self.status_comboBox_0_1.setMinimumSize(QtCore.QSize(201, 31))
-        self.status_comboBox_0_1.setMaximumSize(QtCore.QSize(201, 16777215))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(-1)
-        self.status_comboBox_0_1.setFont(font)
-        self.status_comboBox_0_1.setStyleSheet("QComboBox{\n"
-"    font-family:\"黑体\", Times, serif;\n"
-"    font-size: 12px;\n"
-"\n"
-"}")
-        self.status_comboBox_0_1.setEditable(True)
-        self.status_comboBox_0_1.setObjectName("status_comboBox_0_1")
-        self.gridLayout_5.addWidget(self.status_comboBox_0_1, 1, 4, 1, 1)
+        self.gridLayout_5.addWidget(self.supply_comboBox_0_2, 0, 6, 1, 1)
         self.again_pushButton_0_1 = QtWidgets.QPushButton(self.frame_2)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
@@ -1131,65 +1280,15 @@ class Ui_MainWindow(object):
 "    border-radius:10px;\n"
 "}\n"
 "")
-        icon10 = QtGui.QIcon()
-        icon10.addPixmap(QtGui.QPixmap("D:/Projects/TrillionTech/images/redo-2-128.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.again_pushButton_0_1.setIcon(icon10)
+        icon13 = QtGui.QIcon()
+        icon13.addPixmap(QtGui.QPixmap("D:/Projects/TrillionTech/images/redo-2-128.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.again_pushButton_0_1.setIcon(icon13)
         self.again_pushButton_0_1.setIconSize(QtCore.QSize(20, 20))
         self.again_pushButton_0_1.setCheckable(False)
         self.again_pushButton_0_1.setAutoRepeat(False)
         self.again_pushButton_0_1.setAutoExclusive(False)
         self.again_pushButton_0_1.setObjectName("again_pushButton_0_1")
-        self.gridLayout_5.addWidget(self.again_pushButton_0_1, 1, 6, 1, 1)
-        self.search_pushButton_0_1 = QtWidgets.QPushButton(self.frame_2)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.search_pushButton_0_1.sizePolicy().hasHeightForWidth())
-        self.search_pushButton_0_1.setSizePolicy(sizePolicy)
-        self.search_pushButton_0_1.setMinimumSize(QtCore.QSize(100, 30))
-        self.search_pushButton_0_1.setMaximumSize(QtCore.QSize(100, 30))
-        font = QtGui.QFont()
-        font.setFamily("黑体")
-        font.setPointSize(11)
-        font.setBold(False)
-        font.setItalic(False)
-        font.setUnderline(False)
-        font.setWeight(50)
-        font.setStrikeOut(False)
-        font.setKerning(True)
-        self.search_pushButton_0_1.setFont(font)
-        self.search_pushButton_0_1.setStyleSheet("QPushButton {\n"
-"    border-radius:10px;\n"
-"    padding-top:5px;\n"
-"    padding-bottom: 5px;\n"
-"    border-color: black;\n"
-"    border-style:solid;\n"
-"    border-width:1px;\n"
-"    background-color:#00ff7f;   \n"
-"    margin-right: 10px;\n"
-"}\n"
-"\n"
-"QPushButton:hover\n"
-"{\n"
-"    background-color:#00aaff;\n"
-"    border-radius:10px;\n"
-"}\n"
-"\n"
-"QPushButton:pressed\n"
-"{\n"
-"    padding-left:15px;\n"
-"    border-radius:10px;\n"
-"}\n"
-"")
-        icon11 = QtGui.QIcon()
-        icon11.addPixmap(QtGui.QPixmap("D:/Projects/TrillionTech/images/search-13-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.search_pushButton_0_1.setIcon(icon11)
-        self.search_pushButton_0_1.setIconSize(QtCore.QSize(20, 20))
-        self.search_pushButton_0_1.setCheckable(False)
-        self.search_pushButton_0_1.setAutoRepeat(False)
-        self.search_pushButton_0_1.setAutoExclusive(False)
-        self.search_pushButton_0_1.setObjectName("search_pushButton_0_1")
-        self.gridLayout_5.addWidget(self.search_pushButton_0_1, 1, 7, 1, 1)
+        self.gridLayout_5.addWidget(self.again_pushButton_0_1, 0, 8, 1, 1)
         self.gridLayout_3.addWidget(self.frame_2, 0, 0, 1, 1)
         self.gridLayout_11.addWidget(self.groupBox_4, 0, 0, 1, 1)
         self.groupBox_5 = QtWidgets.QGroupBox(self.page_2)
@@ -1239,9 +1338,9 @@ class Ui_MainWindow(object):
 "    padding-left:15px;\n"
 "    border-radius:5px;\n"
 "}")
-        icon12 = QtGui.QIcon()
-        icon12.addPixmap(QtGui.QPixmap("D:/Projects/TrillionTech/images/sinchronize-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.refresh_pushButton_0_1.setIcon(icon12)
+        icon14 = QtGui.QIcon()
+        icon14.addPixmap(QtGui.QPixmap("D:/Projects/TrillionTech/images/sinchronize-64.gif"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.refresh_pushButton_0_1.setIcon(icon14)
         self.refresh_pushButton_0_1.setCheckable(True)
         self.refresh_pushButton_0_1.setAutoExclusive(True)
         self.refresh_pushButton_0_1.setObjectName("refresh_pushButton_0_1")
@@ -1292,7 +1391,7 @@ class Ui_MainWindow(object):
         self.tableWidget_0_1.setCornerButtonEnabled(False)
         self.tableWidget_0_1.setRowCount(2)
         self.tableWidget_0_1.setObjectName("tableWidget_0_1")
-        self.tableWidget_0_1.setColumnCount(12)
+        self.tableWidget_0_1.setColumnCount(13)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_0_1.setVerticalHeaderItem(0, item)
         item = QtWidgets.QTableWidgetItem()
@@ -1339,18 +1438,21 @@ class Ui_MainWindow(object):
         item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
         self.tableWidget_0_1.setHorizontalHeaderItem(10, item)
         item = QtWidgets.QTableWidgetItem()
-        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        item.setTextAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignVCenter)
         self.tableWidget_0_1.setHorizontalHeaderItem(11, item)
+        item = QtWidgets.QTableWidgetItem()
+        item.setTextAlignment(QtCore.Qt.AlignCenter)
+        self.tableWidget_0_1.setHorizontalHeaderItem(12, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_0_1.setItem(0, 0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_0_1.setItem(0, 11, item)
+        self.tableWidget_0_1.setItem(0, 12, item)
         item = QtWidgets.QTableWidgetItem()
         self.tableWidget_0_1.setItem(1, 0, item)
         item = QtWidgets.QTableWidgetItem()
-        self.tableWidget_0_1.setItem(1, 11, item)
+        self.tableWidget_0_1.setItem(1, 12, item)
         self.tableWidget_0_1.horizontalHeader().setCascadingSectionResizes(False)
-        self.tableWidget_0_1.horizontalHeader().setDefaultSectionSize(105)
+        self.tableWidget_0_1.horizontalHeader().setDefaultSectionSize(120)
         self.tableWidget_0_1.horizontalHeader().setMinimumSectionSize(50)
         self.tableWidget_0_1.horizontalHeader().setStretchLastSection(True)
         self.tableWidget_0_1.verticalHeader().setVisible(False)
@@ -1454,7 +1556,7 @@ class Ui_MainWindow(object):
 "    border-radius:10px;\n"
 "}\n"
 "")
-        self.search_pushButton_1_1.setIcon(icon11)
+        self.search_pushButton_1_1.setIcon(icon12)
         self.search_pushButton_1_1.setIconSize(QtCore.QSize(20, 20))
         self.search_pushButton_1_1.setCheckable(False)
         self.search_pushButton_1_1.setAutoRepeat(False)
@@ -1526,7 +1628,7 @@ class Ui_MainWindow(object):
 "    border-radius:10px;\n"
 "}\n"
 "")
-        self.again_pushButton_1_1.setIcon(icon10)
+        self.again_pushButton_1_1.setIcon(icon13)
         self.again_pushButton_1_1.setIconSize(QtCore.QSize(20, 20))
         self.again_pushButton_1_1.setCheckable(False)
         self.again_pushButton_1_1.setAutoRepeat(False)
@@ -1612,6 +1714,7 @@ class Ui_MainWindow(object):
 "\n"
 "QTableWidget::Item{\n"
 "    border-bottom:1px solid #d0c6ff;\n"
+"    color: black;\n"
 "}")
         self.tableWidget_1_1.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.tableWidget_1_1.setSelectionMode(QtWidgets.QAbstractItemView.NoSelection)
@@ -1684,7 +1787,7 @@ class Ui_MainWindow(object):
 "    padding-left:15px;\n"
 "    border-radius:5px;\n"
 "}")
-        self.refresh_pushButton_1_1.setIcon(icon12)
+        self.refresh_pushButton_1_1.setIcon(icon14)
         self.refresh_pushButton_1_1.setCheckable(True)
         self.refresh_pushButton_1_1.setAutoExclusive(True)
         self.refresh_pushButton_1_1.setObjectName("refresh_pushButton_1_1")
@@ -1729,37 +1832,6 @@ class Ui_MainWindow(object):
         self.CheckCountPB.setText(_translate("MainWindow", " 创建统计单"))
         self.ProductSearchPB.setText(_translate("MainWindow", " 查询统计单"))
         self.ProductSearchPB_2.setText(_translate("MainWindow", " 查询入库单"))
-        self.groupBox_3.setTitle(_translate("MainWindow", "手机信息栏"))
-        self.label_4.setText(_translate("MainWindow", "不良项："))
-        self.label_27.setText(_translate("MainWindow", "手机机型："))
-        self.pushButton_3.setText(_translate("MainWindow", "获取手机信息"))
-        self.label_11.setText(_translate("MainWindow", "申请金额："))
-        self.label_18.setText(_translate("MainWindow", "处理方式："))
-        self.label_10.setText(_translate("MainWindow", "导入文件："))
-        self.label_5.setText(_translate("MainWindow", "手机内存："))
-        self.pushButton_7.setText(_translate("MainWindow", "导入文件"))
-        self.label_22.setText(_translate("MainWindow", "上报总数："))
-        item = self.tableWidget_2.horizontalHeaderItem(0)
-        item.setText(_translate("MainWindow", "IEMI"))
-        item = self.tableWidget_2.horizontalHeaderItem(1)
-        item.setText(_translate("MainWindow", "机型"))
-        item = self.tableWidget_2.horizontalHeaderItem(2)
-        item.setText(_translate("MainWindow", "内存"))
-        item = self.tableWidget_2.horizontalHeaderItem(3)
-        item.setText(_translate("MainWindow", "不良项"))
-        item = self.tableWidget_2.horizontalHeaderItem(4)
-        item.setText(_translate("MainWindow", "处理方式"))
-        item = self.tableWidget_2.horizontalHeaderItem(5)
-        item.setText(_translate("MainWindow", "申请金额"))
-        item = self.tableWidget_2.horizontalHeaderItem(6)
-        item.setText(_translate("MainWindow", "备注"))
-        self.label_28.setText(_translate("MainWindow", "备注："))
-        self.pushButton_5.setText(_translate("MainWindow", "创建统计单"))
-        self.groupBox_2.setTitle(_translate("MainWindow", "统计单信息"))
-        self.label_15.setText(_translate("MainWindow", "创建时间："))
-        self.label_14.setText(_translate("MainWindow", "责任人："))
-        self.label_16.setText(_translate("MainWindow", "Case Num："))
-        self.pushButton_2.setText(_translate("MainWindow", "创建Case Num"))
         self.pushButton_4.setText(_translate("MainWindow", "创建统计单"))
         self.groupBox.setTitle(_translate("MainWindow", "入库单信息"))
         self.label_13.setText(_translate("MainWindow", "手机机型："))
@@ -1777,14 +1849,51 @@ class Ui_MainWindow(object):
         item.setText(_translate("MainWindow", "内存"))
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("MainWindow", "数量"))
+        self.pushButton_5.setText(_translate("MainWindow", "创建统计单"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "统计单信息"))
+        self.label_15.setText(_translate("MainWindow", "创建时间："))
+        self.label_14.setText(_translate("MainWindow", "责任人："))
+        self.label_16.setText(_translate("MainWindow", "Case Num："))
+        self.pushButton_2.setText(_translate("MainWindow", "创建Case Num"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "手机信息栏"))
+        self.label_4.setText(_translate("MainWindow", "不良项："))
+        self.label_18.setText(_translate("MainWindow", "处理方式："))
+        self.label_10.setText(_translate("MainWindow", "导入文件："))
+        self.pushButton_7.setText(_translate("MainWindow", "导入文件"))
+        self.label_5.setText(_translate("MainWindow", "手机内存："))
+        self.label_2.setText(_translate("MainWindow", " 总数："))
+        self.plainTextEdit.setPlainText(_translate("MainWindow", ""))
+        self.plainTextEdit.setPlainText(_translate("MainWindow", ""))
+        self.pushButton_8.setText(_translate("MainWindow", "录入"))
+        self.pushButton_9.setText(_translate("MainWindow", "清空"))
+        self.label_28.setText(_translate("MainWindow", "备注："))
+        item = self.tableWidget_2.horizontalHeaderItem(0)
+        item.setText(_translate("MainWindow", "IEMI"))
+        item = self.tableWidget_2.horizontalHeaderItem(1)
+        item.setText(_translate("MainWindow", "机型"))
+        item = self.tableWidget_2.horizontalHeaderItem(2)
+        item.setText(_translate("MainWindow", "内存"))
+        item = self.tableWidget_2.horizontalHeaderItem(3)
+        item.setText(_translate("MainWindow", "不良项"))
+        item = self.tableWidget_2.horizontalHeaderItem(4)
+        item.setText(_translate("MainWindow", "处理方式"))
+        item = self.tableWidget_2.horizontalHeaderItem(5)
+        item.setText(_translate("MainWindow", "申请金额"))
+        item = self.tableWidget_2.horizontalHeaderItem(6)
+        item.setText(_translate("MainWindow", "备注"))
+        self.pushButton_3.setText(_translate("MainWindow", "获取手机信息"))
+        self.label_27.setText(_translate("MainWindow", "手机机型："))
+        self.label_22.setText(_translate("MainWindow", "总数："))
+        self.label_11.setText(_translate("MainWindow", "申请金额："))
         self.groupBox_4.setTitle(_translate("MainWindow", "搜索栏"))
-        self.checkBox_2.setText(_translate("MainWindow", "创建时间："))
-        self.label_8.setText(_translate("MainWindow", "供应商："))
-        self.label_26.setText(_translate("MainWindow", "IMEI："))
+        self.search_pushButton_0_1.setText(_translate("MainWindow", "搜索"))
         self.label_21.setText(_translate("MainWindow", "Lot Num："))
         self.label_9.setText(_translate("MainWindow", "状态："))
+        self.label_8.setText(_translate("MainWindow", "供应商："))
+        self.checkBox_2.setText(_translate("MainWindow", "创建时间："))
+        self.label_29.setText(_translate("MainWindow", "发票号："))
+        self.label_26.setText(_translate("MainWindow", "IMEI："))
         self.again_pushButton_0_1.setText(_translate("MainWindow", "重置"))
-        self.search_pushButton_0_1.setText(_translate("MainWindow", "搜索"))
         self.groupBox_5.setTitle(_translate("MainWindow", "显示栏"))
         self.label_25.setText(_translate("MainWindow", "总数："))
         self.refresh_pushButton_0_1.setText(_translate("MainWindow", "刷新"))
@@ -1804,29 +1913,31 @@ class Ui_MainWindow(object):
         item = self.tableWidget_0_1.horizontalHeaderItem(4)
         item.setText(_translate("MainWindow", "供应商"))
         item = self.tableWidget_0_1.horizontalHeaderItem(5)
-        item.setText(_translate("MainWindow", "不良数"))
+        item.setText(_translate("MainWindow", "发票号"))
         item = self.tableWidget_0_1.horizontalHeaderItem(6)
-        item.setText(_translate("MainWindow", "不良率"))
+        item.setText(_translate("MainWindow", "不良数"))
         item = self.tableWidget_0_1.horizontalHeaderItem(7)
-        item.setText(_translate("MainWindow", "RMA Num"))
+        item.setText(_translate("MainWindow", "不良率"))
         item = self.tableWidget_0_1.horizontalHeaderItem(8)
-        item.setText(_translate("MainWindow", "退货单号"))
+        item.setText(_translate("MainWindow", "RMA Num"))
         item = self.tableWidget_0_1.horizontalHeaderItem(9)
-        item.setText(_translate("MainWindow", "状态"))
+        item.setText(_translate("MainWindow", "退货单号"))
         item = self.tableWidget_0_1.horizontalHeaderItem(10)
-        item.setText(_translate("MainWindow", "责任人"))
+        item.setText(_translate("MainWindow", "状态"))
         item = self.tableWidget_0_1.horizontalHeaderItem(11)
+        item.setText(_translate("MainWindow", "责任人"))
+        item = self.tableWidget_0_1.horizontalHeaderItem(12)
         item.setText(_translate("MainWindow", "操作"))
         __sortingEnabled = self.tableWidget_0_1.isSortingEnabled()
         self.tableWidget_0_1.setSortingEnabled(False)
         item = self.tableWidget_0_1.item(0, 0)
-        item.setText(_translate("MainWindow", "20210225001"))
-        item = self.tableWidget_0_1.item(0, 11)
-        item.setText(_translate("MainWindow", "详情"))
+        item.setText(_translate("MainWindow", ""))
+        item = self.tableWidget_0_1.item(0, 12)
+        item.setText(_translate("MainWindow", ""))
         item = self.tableWidget_0_1.item(1, 0)
-        item.setText(_translate("MainWindow", "20210225002"))
-        item = self.tableWidget_0_1.item(1, 11)
-        item.setText(_translate("MainWindow", "详情"))
+        item.setText(_translate("MainWindow", ""))
+        item = self.tableWidget_0_1.item(1, 12)
+        item.setText(_translate("MainWindow", ""))
         self.tableWidget_0_1.setSortingEnabled(__sortingEnabled)
         self.groupBox_6.setTitle(_translate("MainWindow", "搜索栏"))
         self.label_17.setText(_translate("MainWindow", "供应商："))

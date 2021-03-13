@@ -287,7 +287,7 @@ class DBDao:
 
     def get_receipt_info(self, lot_num):
         try:
-            sql = f"SELECT in_time,supply_company FROM db_purchase.receipts_table WHERE lot_num='{lot_num}';"
+            sql = f"SELECT in_time,supply_company,credit_num FROM db_purchase.receipts_table WHERE lot_num='{lot_num}';"
             results = CommonDao.search_option(self, sql)
             if isinstance(results, list):
                 return results
@@ -310,6 +310,17 @@ class DBDao:
     def get_case_id(self, lot_num):
         try:
             sql = f"SELECT case_id,responsible FROM db_purchase.cases_table WHERE lot_num='{lot_num}';"
+            results = CommonDao.search_option(self, sql)
+            if isinstance(results, list):
+                return results
+            else:
+                pass
+        except:
+            pass
+
+    def get_case_id_by_IEMI(self, IEMI):
+        try:
+            sql = f"SELECT case_id FROM db_purchase.case_info WHERE IEMI='{IEMI}';"
             results = CommonDao.search_option(self, sql)
             if isinstance(results, list):
                 return results
